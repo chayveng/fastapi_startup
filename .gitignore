@@ -1,0 +1,5 @@
+.venv
+./.venv/
+.venv/
+mongo_data/
+./mongo_data/
