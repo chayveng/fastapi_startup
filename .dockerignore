@@ -1,0 +1,13 @@
+.venv
+.venv/
+venv
+venv/
+mongo-data/
+./mongo-data
+init-mongo-script.js
+README.md
+Dockerfile
+docker-compose.yml
+.gitignore
+
+
