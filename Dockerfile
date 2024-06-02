@@ -6,11 +6,11 @@ RUN apt-get update \
     freetds-dev \
     && rm -rf /var/lib/apt/lists/*
 
-WORKDIR /app
+WORKDIR /data
 
 COPY requirements.txt .
 
-RUN pip install --no-cache-dir -r requirements.txt && pip install --upgrade sqlalchemy
+RUN pip install --no-cache-dir -r requirements.txt
 
 COPY . .
 

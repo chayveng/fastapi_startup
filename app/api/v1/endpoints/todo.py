@@ -1,6 +1,6 @@
 from fastapi import APIRouter
-from app.model.todo import Todo as TodoDB
-from app.core.mongo_local import db as mongo_db
+# from app.model.todo import Todo as TodoDB
+from app.core.mongo import db as mongo_db
 
 
 
@@ -14,10 +14,10 @@ def greeting():
     return {"message": "Todo route"}
 
 
-@router.get("/")
-def todos():
-  result = mongo_db.query(TodoDB).all()
-  return {"todos:", result}
+# @router.get("/")
+# def todos():
+#   result = mongo_db.query(TodoDB).all()
+#   return {"todos:", result}
 
 # @router.get("/")
 # def todos():
